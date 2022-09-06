@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Главная</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" > 
+        </head>
+<body>
+    <input type="text" id="textlength">
+    <input type="button" onclick="counter()" value="Узнать вхождение 'A'">
+    <input type="button" onclick="mass()" value="Массив">
+<script>
+    function counter(){
+
+        const word = document.getElementById('textlength').value;
+    
+   let a = "аАaA";
+   let s = 0;
+ for (let i = 0; i < word.length; i++) {
+    if(a.includes(word[i]))
+    { 
+    //i=i+1;
+    alert(s=i+1);
+    }
+    else{}
+ }}
+ 
+ function getRandomArbitary(min, max) // Функция для рандома
+{
+  return Math.floor(Math.random() * (max - min) + min);
+}
+function mass(){
+var n = 20; // количество элементов в массиве
+var arr = [];//7, 8, 1, 4, 0, 1, 8, 8, 2, 1, 4, 0, 4, 2, 2, 7, 7, 7, 0, 0
+var l = 0;
+var sum = 0;
+var k = [];
+var summak = 0;
+for (var i = 0; i < n; i++) {
+        arr[i] = getRandomArbitary(0, 10);
+        l = arr[18];
+       
+       console.log(arr[i] + ' Рандомайзер'); // выводим не в консоль, а в документ 
+       
+        //document.write(arr[i] + '<br>'); 
+        
+    }console.log(l + ' Предпосл ' + k);
+
+   
+
+   for (i = 0; i < arr.length; i++){
+      sum += arr[i]
+      
+   } console.log(sum + ' SUMMARANDOM');
+   
+   for (i = 0; i < arr.length; i++){
+      k[i] = (arr[i] - l) * (sum/2);
+      
+    //  console.log(k + ' МИНУС ПРЕДПОСЛ ЗНАЧЕНИЕ');
+   } 
+  // let itogo = (sum/2)*k;
+ console.log(k + ' itogo');
+   
+ 
+ 
+}
+    
+</script>
+</body>
+
+
+</html>
