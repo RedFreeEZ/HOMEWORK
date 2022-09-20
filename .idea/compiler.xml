@@ -2,8 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="Exercise1.main" target="18" />
-      <module name="Exercise1.test" target="18" />
+      <module name="HomeWork5" target="18" />
     </bytecodeTargetLevel>
   </component>
 </project>
